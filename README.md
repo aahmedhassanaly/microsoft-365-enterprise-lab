@@ -47,19 +47,19 @@ Microsoft Entra ID
 
 | # | Task | Status |
 |---|---|---|
-| 01 | Tenant & Organization Setup | ✅ |
-| 02 | Entra ID Users & Groups | ✅ |
-| 03 | Entra ID Administration & Security | ✅ |
-| 04 | Exchange Online & Mailboxes | ✅ |
-| 05 | Exchange Mail Flow & Troubleshooting | ✅ |
-| 06 | Microsoft Teams | ✅ |
-| 07 | SharePoint Online | ✅ |
-| 08 | OneDrive | ✅ |
-| 09 | Intune Device Enrollment | ✅ |
-| 10 | Intune Configuration & Compliance | ✅ |
-| 11 | Intune Application Management | ✅ |
-| 12 | Conditional Access | ✅ |
-| 13 | Microsoft Defender | ✅ |
+| 01 | [Tenant & Organization Setup](Documentation/01-tenant-organization-setup.md) | ✅ |
+| 02 | [Entra ID Users & Groups](Documentation/02-entra-id-users-groups.md) | ✅ |
+| 03 | [Entra ID Administration & Security](Documentation/03-entra-id-administration-security.md) | ✅ |
+| 04 | [Exchange Online & Mailboxes](Documentation/04-exchange-online-mailboxes.md) | ✅ |
+| 05 | [Exchange Mail Flow & Troubleshooting](Documentation/05-exchange-mail-flow-troubleshooting.md) | ✅ |
+| 06 | [Microsoft Teams](Documentation/06-microsoft-teams.md) | ✅ |
+| 07 | [SharePoint Online](Documentation/07-sharepoint-online.md) | ✅ |
+| 08 | [OneDrive](Documentation/08-onedrive.md) | ✅ |
+| 09 | [Intune Device Enrollment](Documentation/09-intune-device-enrollment.md) | ✅ |
+| 10 | [Intune Configuration & Compliance](Documentation/10-intune-configuration-compliance.md) | ✅ |
+| 11 | [Intune Application Management](Documentation/11-intune-application-endpoint-management.md) | ✅ |
+| 12 | [Conditional Access](Documentation/12-conditional-access.md) | ✅ |
+| 13 | [Microsoft Defender](Documentation/13-microsoft-defender.md) | ✅ |
 
 See the full tasks in the [Documentation](Documentation/).
 
