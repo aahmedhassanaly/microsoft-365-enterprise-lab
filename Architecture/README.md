@@ -6,15 +6,6 @@ This directory contains the architecture documentation and topology diagram for 
 
 ![Microsoft 365 Enterprise Lab Topology](m365-enterprise-topology.svg)
 
-The editable/renderable topology diagram is:
-
-`m365-enterprise-topology.svg`
-
-Reserved PNG export location:
-
-`m365-enterprise-topology.png`
-
-If a higher-resolution PNG is preferred later, replace/add the PNG at that path without changing the repository structure.
 
 ## What the diagram represents
 
