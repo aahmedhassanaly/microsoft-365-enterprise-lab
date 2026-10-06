@@ -58,7 +58,6 @@ Windows 11
 The topology source is stored in **[`Architecture/`](Architecture/)**.
 
 - Renderable diagram: `Architecture/m365-enterprise-topology.svg`
-- Reserved high-resolution PNG path: `Architecture/m365-enterprise-topology.png`
 
 The diagram shows the relationship between the on-premises AD environment, Entra ID, Microsoft 365 workloads, Intune, Defender, Conditional Access, and the managed Windows endpoint.
 
@@ -402,7 +401,7 @@ microsoft-365-enterprise-lab/
 │
 ├── Architecture/
 │   ├── README.md
-│   └── m365-enterprise-topology.png   ← reserved topology image
+│   └── m365-enterprise-topology.svg
 │
 └── Documentation/
     ├── 01-tenant-organization-setup.md
