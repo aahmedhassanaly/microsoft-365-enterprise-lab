@@ -24,25 +24,25 @@ A practical Microsoft 365 lab for **IT Infrastructure / Microsoft 365 Administra
 
 The lab connects on-premises Active Directory to Microsoft Entra ID and extends identity into Exchange Online, collaboration services, Intune, Conditional Access, and endpoint security.
 
-## Completed Tasks
+## Tasks
 
-| # | Area | Result |
-|---|---|---|
-| 01 | Tenant & organization setup | ✅ |
-| 02 | Entra ID users & groups | ✅ |
-| 03 | Entra administration & security | ✅ |
-| 04 | Exchange Online & mailboxes | ✅ |
-| 05 | Exchange mail flow & troubleshooting | ✅ |
-| 06 | Microsoft Teams | ✅ |
-| 07 | SharePoint Online | ✅ |
-| 08 | OneDrive | ✅ |
-| 09 | Intune device enrollment | ✅ |
-| 10 | Intune configuration & compliance | ✅ |
-| 11 | Intune application management | ✅ |
-| 12 | Conditional Access | ✅ |
-| 13 | Microsoft Defender | ✅ |
+| # | Task | Status |
+|---:|---|:---:|
+| 01 | [Tenant & Organization Setup](Documentation/01-tenant-organization-setup.md) | ✅ |
+| 02 | [Entra ID Users & Groups](Documentation/02-entra-id-users-groups.md) | ✅ |
+| 03 | [Entra ID Administration & Security](Documentation/03-entra-id-administration-security.md) | ✅ |
+| 04 | [Exchange Online & Mailboxes](Documentation/04-exchange-online-mailboxes.md) | ✅ |
+| 05 | [Exchange Mail Flow & Troubleshooting](Documentation/05-exchange-mail-flow-troubleshooting.md) | ✅ |
+| 06 | [Microsoft Teams](Documentation/06-microsoft-teams.md) | ✅ |
+| 07 | [SharePoint Online](Documentation/07-sharepoint-online.md) | ✅ |
+| 08 | [OneDrive](Documentation/08-onedrive.md) | ✅ |
+| 09 | [Intune Device Enrollment](Documentation/09-intune-device-enrollment.md) | ✅ |
+| 10 | [Intune Configuration & Compliance](Documentation/10-intune-configuration-compliance.md) | ✅ |
+| 11 | [Intune Application & Endpoint Management](Documentation/11-intune-application-endpoint-management.md) | ✅ |
+| 12 | [Conditional Access](Documentation/12-conditional-access.md) | ✅ |
+| 13 | [Microsoft Defender](Documentation/13-microsoft-defender.md) | ✅ |
 
-Detailed task documentation is available in [Documentation](Documentation/).
+Detailed implementation notes: [Documentation](Documentation/).
 
 ## Core Skills Demonstrated
 
