@@ -1,8 +1,8 @@
 # Microsoft 365 Enterprise Lab
 
-A practical Microsoft 365 lab for **IT Infrastructure / Microsoft 365 Administration**.
+**Portfolio Priority: #5 — Microsoft 365 / Endpoint Administration**
 
-The lab uses a small company called **Kozika Online** and covers identity, email, collaboration, device management, and security.
+A practical Microsoft 365 lab for **IT Infrastructure / Microsoft 365 Administration** using a small-company scenario.
 
 ## Environment
 
@@ -18,52 +18,33 @@ The lab uses a small company called **Kozika Online** and covers identity, email
 - Conditional Access
 - Microsoft Defender
 
-### Architecture
+## Architecture
 
-```text
-Active Directory
-     │
-     │ Cloud Sync + PHS
-     ▼
-Microsoft Entra ID
-     │
-     ├── Exchange Online
-     ├── Teams
-     ├── SharePoint
-     ├── OneDrive
-     └── Intune
-             │
-             ▼
-        Windows 11
-             │
-       Conditional Access
-             │
-          Defender
-```
+<img src="Architecture/m365-enterprise-topology.svg" alt="Microsoft 365 enterprise topology" />
 
-[View the topology diagram](Architecture/m365-enterprise-topology.svg)
+The lab connects on-premises Active Directory to Microsoft Entra ID and extends identity into Exchange Online, collaboration services, Intune, Conditional Access, and endpoint security.
 
-## Lab Tasks
+## Completed Tasks
 
-| # | Task | Status |
+| # | Area | Result |
 |---|---|---|
-| 01 | [Tenant & Organization Setup](Documentation/01-tenant-organization-setup.md) | ✅ |
-| 02 | [Entra ID Users & Groups](Documentation/02-entra-id-users-groups.md) | ✅ |
-| 03 | [Entra ID Administration & Security](Documentation/03-entra-id-administration-security.md) | ✅ |
-| 04 | [Exchange Online & Mailboxes](Documentation/04-exchange-online-mailboxes.md) | ✅ |
-| 05 | [Exchange Mail Flow & Troubleshooting](Documentation/05-exchange-mail-flow-troubleshooting.md) | ✅ |
-| 06 | [Microsoft Teams](Documentation/06-microsoft-teams.md) | ✅ |
-| 07 | [SharePoint Online](Documentation/07-sharepoint-online.md) | ✅ |
-| 08 | [OneDrive](Documentation/08-onedrive.md) | ✅ |
-| 09 | [Intune Device Enrollment](Documentation/09-intune-device-enrollment.md) | ✅ |
-| 10 | [Intune Configuration & Compliance](Documentation/10-intune-configuration-compliance.md) | ✅ |
-| 11 | [Intune Application Management](Documentation/11-intune-application-endpoint-management.md) | ✅ |
-| 12 | [Conditional Access](Documentation/12-conditional-access.md) | ✅ |
-| 13 | [Microsoft Defender](Documentation/13-microsoft-defender.md) | ✅ |
+| 01 | Tenant & organization setup | ✅ |
+| 02 | Entra ID users & groups | ✅ |
+| 03 | Entra administration & security | ✅ |
+| 04 | Exchange Online & mailboxes | ✅ |
+| 05 | Exchange mail flow & troubleshooting | ✅ |
+| 06 | Microsoft Teams | ✅ |
+| 07 | SharePoint Online | ✅ |
+| 08 | OneDrive | ✅ |
+| 09 | Intune device enrollment | ✅ |
+| 10 | Intune configuration & compliance | ✅ |
+| 11 | Intune application management | ✅ |
+| 12 | Conditional Access | ✅ |
+| 13 | Microsoft Defender | ✅ |
 
-See the full tasks in the [Documentation](Documentation/).
+Detailed task documentation is available in [Documentation](Documentation/).
 
-## Main Skills
+## Core Skills Demonstrated
 
 ### Identity
 - Microsoft Entra ID
@@ -75,13 +56,13 @@ See the full tasks in the [Documentation](Documentation/).
 - MFA
 - Administrative Units
 
-### Exchange Online
-- Mailbox management
+### Messaging
+- Exchange Online mailboxes
 - SMTP and aliases
 - MX
 - SPF, DKIM, DMARC
 - Message Trace
-- Mail flow troubleshooting
+- Mail-flow troubleshooting
 
 ### Endpoint Management
 - Intune enrollment
@@ -99,9 +80,7 @@ See the full tasks in the [Documentation](Documentation/).
 - Microsoft Defender
 - Endpoint security
 
-## Troubleshooting
-
-The lab uses this method:
+## Troubleshooting Method
 
 ```text
 Problem
@@ -119,44 +98,27 @@ Verify
 Document
 ```
 
-Examples include:
+Examples include Cloud Sync scope problems, Exchange mail-flow issues, Intune application deployment, Conditional Access device identity, and Defender policy verification.
 
-- Cloud Sync scope problem
-- Exchange mail flow problem
-- Intune application deployment problem
-- Conditional Access device problem
-- Defender policy verification
-
-The goal is not only to configure a service, but also to **find problems and verify the fix**.
-
-## PowerShell
+## PowerShell Scope
 
 PowerShell was used for practical checks and administration where available.
 
-Full Microsoft 365 PowerShell automation is **not completed** in this lab because the trial environment did not provide the required capability.
+Full Microsoft 365 PowerShell automation is **not completed** because the trial environment did not provide the required capability. This is intentionally not presented as a completed skill.
 
-This is intentionally not presented as a completed skill.
+## Project Boundaries
 
-## Project Scope
-
-This project focuses on Microsoft 365 administration and IT Infrastructure.
-
-It does not claim advanced skills in:
+This project does not claim advanced expertise in:
 
 - Microsoft Graph automation
-- SharePoint development
-- SPFx
+- SharePoint development / SPFx
 - Microsoft Sentinel
 - Advanced Defender for Cloud Apps
 - Large migration projects
 - Full Microsoft Purview implementation
 
-## Project Status
+## Result
 
-**13 practical tasks completed.**
+**Identity → Messaging & Collaboration → Endpoint Management → Conditional Access → Endpoint Security**
 
-The main goal is:
-
-**Understand → Configure → Verify → Troubleshoot → Explain → Document**
-
-**Career focus:** IT Infrastructure / Microsoft 365 / Endpoint Administration / Junior System Administration
+The project demonstrates practical administration, verification, troubleshooting, and documentation rather than only configuration.
