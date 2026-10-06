@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#333"/>
+    </marker>
+    <style>
+      .title{font:700 28px Arial,sans-serif;fill:#111}
+      .section{font:700 18px Arial,sans-serif;fill:#111}
+      .label{font:600 16px Arial,sans-serif;fill:#111}
+      .small{font:14px Arial,sans-serif;fill:#333}
+      .box{fill:#fff;stroke:#555;stroke-width:2;rx:12}
+      .cloud{fill:#f5f7fa;stroke:#555;stroke-width:2;rx:16}
+      .line{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+
+  <rect width="1400" height="850" fill="#ffffff"/>
+  <text x="700" y="45" text-anchor="middle" class="title">Kozika Online — Microsoft 365 Enterprise Lab Topology</text>
+
+  <rect x="45" y="90" width="330" height="690" class="cloud"/>
+  <text x="210" y="125" text-anchor="middle" class="section">On-Premises</text>
+
+  <rect x="85" y="165" width="250" height="150" class="box"/>
+  <text x="210" y="200" text-anchor="middle" class="label">Windows Server</text>
+  <text x="210" y="230" text-anchor="middle" class="small">Active Directory</text>
+  <text x="210" y="255" text-anchor="middle" class="small">kozika.local</text>
+  <text x="210" y="280" text-anchor="middle" class="small">Users + Security Groups</text>
+
+  <rect x="85" y="370" width="250" height="130" class="box"/>
+  <text x="210" y="410" text-anchor="middle" class="label">Microsoft Entra</text>
+  <text x="210" y="435" text-anchor="middle" class="label">Provisioning Agent</text>
+  <text x="210" y="465" text-anchor="middle" class="small">Cloud Sync</text>
+
+  <line x1="210" y1="315" x2="210" y2="370" class="line"/>
+  <text x="235" y="350" class="small">Identity sync</text>
+
+  <rect x="85" y="560" width="250" height="145" class="box"/>
+  <text x="210" y="600" text-anchor="middle" class="label">Admin / Test Tools</text>
+  <text x="210" y="630" text-anchor="middle" class="small">PowerShell</text>
+  <text x="210" y="655" text-anchor="middle" class="small">AD verification</text>
+  <text x="210" y="680" text-anchor="middle" class="small">Endpoint verification</text>
+
+  <rect x="430" y="90" width="600" height="690" class="cloud"/>
+  <text x="730" y="125" text-anchor="middle" class="section">Microsoft Cloud</text>
+
+  <rect x="475" y="165" width="510" height="120" class="box"/>
+  <text x="730" y="205" text-anchor="middle" class="label">Microsoft Entra ID</text>
+  <text x="730" y="235" text-anchor="middle" class="small">Identity • RBAC • MFA • Administrative Units</text>
+  <text x="730" y="260" text-anchor="middle" class="small">Tenant: kozika12.onmicrosoft.com • Domain: kozika.online</text>
+
+  <line x1="335" y1="435" x2="475" y2="225" class="line"/>
+  <text x="375" y="330" class="small">Cloud Sync + PHS</text>
+
+  <rect x="475" y="335" width="235" height="115" class="box"/>
+  <text x="592" y="370" text-anchor="middle" class="label">Exchange Online</text>
+  <text x="592" y="400" text-anchor="middle" class="small">Mailboxes • Mail Flow</text>
+  <text x="592" y="425" text-anchor="middle" class="small">SPF • DKIM • DMARC</text>
+
+  <rect x="750" y="335" width="235" height="115" class="box"/>
+  <text x="867" y="370" text-anchor="middle" class="label">Collaboration</text>
+  <text x="867" y="400" text-anchor="middle" class="small">Teams</text>
+  <text x="867" y="425" text-anchor="middle" class="small">SharePoint • OneDrive</text>
+
+  <line x1="730" y1="285" x2="592" y2="335" class="line"/>
+  <line x1="730" y1="285" x2="867" y2="335" class="line"/>
+
+  <rect x="475" y="500" width="235" height="120" class="box"/>
+  <text x="592" y="540" text-anchor="middle" class="label">Microsoft Intune</text>
+  <text x="592" y="570" text-anchor="middle" class="small">Enrollment • Configuration</text>
+  <text x="592" y="595" text-anchor="middle" class="small">Compliance • Applications</text>
+
+  <rect x="750" y="500" width="235" height="120" class="box"/>
+  <text x="867" y="540" text-anchor="middle" class="label">Security</text>
+  <text x="867" y="570" text-anchor="middle" class="small">Conditional Access</text>
+  <text x="867" y="595" text-anchor="middle" class="small">Microsoft Defender</text>
+
+  <line x1="730" y1="285" x2="592" y2="500" class="line"/>
+  <line x1="730" y1="285" x2="867" y2="500" class="line"/>
+
+  <rect x="1090" y="90" width="265" height="690" class="cloud"/>
+  <text x="1222" y="125" text-anchor="middle" class="section">Managed Endpoint</text>
+
+  <rect x="1125" y="180" width="195" height="160" class="box"/>
+  <text x="1222" y="220" text-anchor="middle" class="label">Windows 11</text>
+  <text x="1222" y="250" text-anchor="middle" class="small">Entra Registered</text>
+  <text x="1222" y="275" text-anchor="middle" class="small">Intune Managed</text>
+  <text x="1222" y="300" text-anchor="middle" class="small">Compliant</text>
+
+  <rect x="1125" y="405" width="195" height="135" class="box"/>
+  <text x="1222" y="445" text-anchor="middle" class="label">Endpoint Security</text>
+  <text x="1222" y="475" text-anchor="middle" class="small">Defender for Endpoint</text>
+  <text x="1222" y="500" text-anchor="middle" class="small">Defender Antivirus</text>
+
+  <rect x="1125" y="605" width="195" height="100" class="box"/>
+  <text x="1222" y="645" text-anchor="middle" class="label">M365 Access</text>
+  <text x="1222" y="675" text-anchor="middle" class="small">MFA + Device Compliance</text>
+
+  <line x1="985" y1="560" x2="1125" y2="260" class="line"/>
+  <line x1="985" y1="560" x2="1125" y2="455" class="line"/>
+  <line x1="985" y1="560" x2="1125" y2="655" class="line"/>
+
+  <text x="700" y="825" text-anchor="middle" class="small">Evidence-driven administration: configure → verify → troubleshoot → document</text>
+</svg>
