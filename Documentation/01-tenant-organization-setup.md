@@ -113,7 +113,7 @@ Planned service configuration:
 | Intune | Task 09 |
 | Conditional Access | Task 12 |
 | Defender | Task 13 |
-| Purview | Task 14 |
+| Purview | Future / optional task |
 
 ---
 
