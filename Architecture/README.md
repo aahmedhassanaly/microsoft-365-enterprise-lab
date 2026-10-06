@@ -2,21 +2,30 @@
 
 This directory contains the architecture documentation and topology diagram for the Microsoft 365 Enterprise Lab.
 
-## Topology Image
+## Topology
 
-Reserved path for the final topology image:
+![Microsoft 365 Enterprise Lab Topology](m365-enterprise-topology.svg)
+
+The editable/renderable topology diagram is:
+
+`m365-enterprise-topology.svg`
+
+Reserved PNG export location:
 
 `m365-enterprise-topology.png`
 
-The image should show:
+If a higher-resolution PNG is preferred later, replace/add the PNG at that path without changing the repository structure.
+
+## What the diagram represents
 
 1. **On-premises**
    - Windows Server / Active Directory
    - Domain: `kozika.local`
    - Users and security groups
-   - Microsoft 365 OU
+   - Microsoft 365 synchronization OU
 
 2. **Identity synchronization**
+   - Microsoft Entra Provisioning Agent
    - Microsoft Entra Cloud Sync
    - Password Hash Synchronization
 
@@ -37,47 +46,24 @@ The image should show:
    - Compliance
    - Defender protection
 
-## Logical Flow
+## Logical flow
 
 ```text
-┌──────────────────────────────┐
-│ On-Premises Windows Server   │
-│ Active Directory             │
-│ kozika.local                │
-└──────────────┬───────────────┘
-               │
-               │ Cloud Sync
-               │ + PHS
-               ▼
-┌──────────────────────────────┐
-│ Microsoft Entra ID           │
-│ Identity + RBAC + MFA        │
-└───────┬───────────┬──────────┘
-        │           │
-        │           └─────────────────────┐
-        ▼                                 ▼
-┌──────────────────────┐       ┌──────────────────────┐
-│ Microsoft 365        │       │ Microsoft Intune     │
-│ Workloads            │       │ Endpoint Management  │
-│                      │       └──────────┬───────────┘
-│ Exchange Online      │                  │
-│ Teams                │                  ▼
-│ SharePoint Online    │       ┌──────────────────────┐
-│ OneDrive             │       │ Windows 11 Endpoint  │
-└──────────┬───────────┘       │ Entra Registered     │
-           │                   │ Intune Managed       │
-           │                   │ Compliant            │
-           ▼                   └──────────┬───────────┘
-┌──────────────────────┐                  │
-│ Conditional Access   │◄─────────────────┘
-│ MFA + Device State   │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│ Microsoft Defender   │
-│ Endpoint + Antivirus │
-└──────────────────────┘
+Active Directory (kozika.local)
+        │
+        │ Cloud Sync + PHS
+        ▼
+Microsoft Entra ID
+        │
+        ├── Exchange Online
+        ├── Teams / SharePoint / OneDrive
+        ├── Intune
+        └── Conditional Access / Defender
+                    │
+                    ▼
+              Windows 11
+        Entra Registered / Intune Managed
+                    │
+                    ▼
+            Endpoint Security
 ```
-
-The PNG topology is intentionally kept separate from the task documentation so the architecture can be updated without changing the individual task write-ups.
